@@ -22,7 +22,8 @@
 
 Чтобы отобразить кнопки лайков и дизлайков на страницах постов, вам нужно добавить следующий код в файл шаблона вашего WordPress-темы (например, single.php или content.php):
 
-```<img src="input-your-icon-plus" alt="" class="like-plus" data-post-id="<?php the_ID(); ?>">
+```
+<img src="input-your-icon-plus" alt="" class="like-plus" data-post-id="<?php the_ID(); ?>">
 <span class="like-count" id="like-count-<?php the_ID(); ?>">
   <?php
   $likes = get_post_likes_dislikes(get_the_ID());
